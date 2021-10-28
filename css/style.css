@@ -2,5 +2,62 @@
     box-sizing: border-box;
 }
 .body{
-    font-family: 'Acme', sans-serif;
+    font-family: 'Spectral SC', sans-serif;
+    margin: 0;
+}
+
+.header{
+    color: #ffffffe7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* font-size: 1.6em; */
+    font-size: clamp(1.6em,5vw,2.5em);;
+    text-align: center;
+    height: 100vh;
+    background-color: rgb(38, 46, 46);
+    /* background-image: url(/assets/img/mobile-background.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 0.35rem solid rgba(231, 33, 33, 0.726);
+    
+}
+.header-title,
+.header-title2,
+.header-title3{
+    margin: 1rem;
+}
+.nav-bar{
+    background-color: rgb(38, 46, 46);
+    /* letter-spacing: 1px; */
+    font-weight: 400;
+    display: flex;
+    /* flex-basis: 30%; */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    justify-content: space-around;
+    font-size: clamp(1.2rem,5vw,1.5rem);
+    border-bottom: 0.35rem solid rgba(231, 33, 33, 0.726);
+}
+.nav-bar a{
+    font-weight: 700;
+    text-align: center;
+    padding: 0.5em;
+    /* width: 100%; */
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.nav-bar a:hover{
+    background-color: rgb(138, 138, 138);
+}
+.main{
+    border-bottom: 0.35rem solid rgba(231, 33, 33, 0.726);
+}
+
+@media(min-width:800px){
+    .nav-bar{
+        justify-content: flex-start;
+    }
 }
