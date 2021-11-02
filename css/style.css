@@ -120,27 +120,34 @@ hr{
     text-decoration: none;
     text-transform: uppercase;
     color: white;
-    padding: 1em;
-    border-radius: 10px;
+    display: block;
+    padding: 0.5em 1em;
+    border-radius: 20px;
     font-weight: 700
 }
 .facebook{
-    background-color: rgb(81, 81, 238);
+    background-color: rgba(81, 81, 238, 0.609);
+    transition: 0.5s ease;
 }
 .steam{
-    background-color: rgb(53, 51, 51);
+    background-color: rgba(53, 51, 51, 0.609);
+    transition: 0.5s ease;
 }
 .instagram{
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    transition: 0.5s ease;
 }
 .facebook:hover{
-    box-shadow: 1px 1px 50px blue;
+    box-shadow: 1px 1px 50px rgba(0, 0, 255, 0.493);
+    transform: translateY(0.3em);
 }
 .steam:hover{
-    box-shadow: 1px 1px 50px rgb(136, 133, 133);
+    box-shadow: 1px 1px 50px rgba(95, 92, 92, 0.589);
+    transform: translateY(0.3em);
 }
 .instagram:hover{
-    box-shadow: 1px 1px 50px rgb(211, 67, 67);
+    box-shadow: 1px 1px 50px rgba(211, 67, 67, 0.65);
+    transform: translateY(0.3em);
 }
 .footer{
     color: white;
@@ -173,7 +180,7 @@ hr{
         padding: 0.5em;
     }
     .contact-link{
-        padding: 1em;
+        padding: 0.3em 2.2em;
     }
     .footer{
         flex-direction: row;
