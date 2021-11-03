@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 .body{
-    font-family: 'Zen kurenaido', sans-serif;
+    font-family: 'Roboco', sans-serif;
     margin: 0;
 }
 
@@ -14,9 +14,8 @@
     font-size: clamp(1.9em,5vw,2.8em);
     text-align: center;
     height: 100vh;
-    background: linear-gradient(#777c81d3, #000000d2);
+    background: linear-gradient(#817877d3, #000000d2);
     border-bottom: 0.35rem solid rgba(231, 33, 33, 0.726);
-    
 }
 span{
     font-weight: 400;
@@ -53,9 +52,11 @@ hr{
     width: 100%;
     color: rgb(255, 255, 255);
     text-decoration: none;
+    transition: 0.5s ease;
 }
 .nav-bar a:hover{
     background-color: rgb(138, 138, 138);
+    transform: translateY(-0.09em);
 }
 .main{
     background-color: rgb(50, 32, 70);
@@ -75,18 +76,25 @@ hr{
     padding: 0.5rem;
 }
 .main-projects h3{
-    margin: auto;
+    margin: 0.2em auto;
     font-size: clamp(3rem,5vw,4rem);
-    max-width: 1000px;
+    /* max-width: 1000px; */
+    /* text-decoration: underline overline #FF3028; */
     width: 100%;
 }
+
+#works{
+    margin: 0.5em auto;
+}
+
+
 .project-tile{
     padding: 0.5rem;
     display: flex;
     flex-direction: column;
     border-radius: 5px;
     margin-top: 2rem;
-    background: linear-gradient(#777c81d3, #000000d2);   
+    background: linear-gradient(#817877d3, #000000d2);   
 }
 .project-tile h3{
     font-size: clamp(1.5rem,5vw,2rem);
@@ -151,7 +159,7 @@ hr{
 }
 .footer{
     color: white;
-    font-size: clamp(0.1rem,5vw,1.5rem);
+    font-size: clamp(0.5rem,5vw,1rem);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -168,6 +176,7 @@ hr{
     .nav-bar{
         justify-content: flex-start;
         margin: 0;
+        z-index: 1;
     }
     .nav-bar a{
         width: 100%;
@@ -175,6 +184,10 @@ hr{
     }
     .project-tile{
         margin:1rem 4rem;
+        transition: 0.5s ease;
+    }
+    .project-tile:hover{
+        transform: scale(1.05);
     }
     .project-link{
         padding: 0.5em;
